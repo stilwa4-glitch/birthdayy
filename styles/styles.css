@@ -1,0 +1,114 @@
+:root{
+  --bg1:#0f172a;
+  --bg2:#020617;
+  --accent:#ff86c1;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Poppins,sans-serif;
+  background:linear-gradient(160deg,var(--bg1),var(--bg2));
+  color:#fff;
+}
+
+.center-full{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.bg-animated::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.08),transparent 40%);
+}
+
+.card{
+  background:rgba(255,255,255,.06);
+  padding:28px;
+  border-radius:18px;
+  width:320px;
+  backdrop-filter:blur(10px);
+  text-align:center;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:10px;
+  border:none;
+}
+
+.btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(90deg,#7dd175,#ff86c1);
+  font-weight:600;
+  cursor:pointer;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero,
+.six,
+.nine{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.hero{margin-top:10vh}
+
+.one{font-size:2.4rem}
+.three{color:var(--accent)}
+
+.text-box{
+  margin:30px auto;
+  padding:20px;
+  max-width:600px;
+  background:rgba(255,255,255,.08);
+  border-radius:16px;
+}
+
+.fake-btn{
+  margin-top:14px;
+  padding:10px 16px;
+  border-radius:12px;
+  border:none;
+  background:var(--accent);
+  font-weight:600;
+}
+
+.profile-picture{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  margin:20px auto;
+}
+
+.wish-hbd{
+  font-size:2rem;
+  color:var(--accent);
+}
+
+.nine{margin-top:500px}
+#replay{text-decoration:underline;cursor:pointer}
+
+.song{display:none}

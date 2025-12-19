@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+
+  <audio class="song" loop>
+    <source src="/music/hbd.mp3">
+  </audio>
+
+<div class="container">
+  <header class="hero">
+    <h1 class="one">Hi 👋 <span id="name">"username"</span></h1>
+    <p class="two" id="typingText"></p>
+    <p class="three">It's your birthday 🎂</p>
+  </header>
+
+  <section class="four">
+    <div class="text-box">
+      <p class="hbd-chatbox">
+        haloo Semoga hari ini penuh tawa, kebahagiaan, dan hal baik.
+        Kamu pantas dapet semua yang terbaik 🤍, btw namamu unik
+      </p>
+      <button class="fake-btn">Lanjut ✨</button>
+    </div>
+  </section>
+
+  <section class="six">
+    <img src="/img/favicon.png" class="profile-picture">
+    <div class="wish">
+      <h3 class="wish-hbd">Happy Birthday!</h3>
+      <h5 class="wish-text">“Semoga kamu selalu berani mencoba hal baru,
+tetap semangat saat menghadapi tantangan,
+dan terus belajar menjadi pribadi yang lebih baik.<p>Semoga cita-citamu tercapai,
+nilaimu semakin baik, dan hari-harimu penuh semangat.”</p> ✨</h5>
+    </div>
+  </section>
+
+  <div class="nine">
+    <p>Makasih sudah baca sampai akhir 🥹</p>
+    <p id="replay">Klik di sini buat ngulang ✨</p>
+    <p class="last-smile">😊</p>
+  </div>
+</div>
+
+<!-- LIBRARY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script src="/scripts/birthday.js"></script>
+</body>
+</html>
